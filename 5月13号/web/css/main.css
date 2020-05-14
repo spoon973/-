@@ -1,0 +1,59 @@
+/*页面顶部的样式*/
+
+body{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+
+.header_con{
+    height: 29px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+
+.header{
+    width: 1200px;
+    height: 29px;
+    /*background-color: cyan;*/
+    margin: 0 auto;
+}
+
+.welcome{
+    font-size: 12px;
+    color: #666;
+    line-height: 29px;
+}
+
+.user_con{
+    /*background-color: cyan;*/
+}
+
+.user_info{
+    display: none;
+    font-size: 12px;
+    line-height: 29px;
+    color: #666;
+}
+
+.user_info em{
+    color: #f80;
+}
+
+.login_btn li, .user_btn li{
+    float: left;
+    height: 29px;
+}
+.login_btn li a, .login_btn span, .user_btn a, .user_btn span{
+    display: block;
+    line-height: 29px;
+    font-size: 12px;
+    color: #666;
+}
+.login_btn span, .user_btn span{
+    color: #cecece;
+    margin: 0 10px;
+}
+
+.login_btn li a:hover, .user_btn a:hover{
+    color: #f80;
+}

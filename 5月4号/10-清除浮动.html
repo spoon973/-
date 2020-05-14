@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动</title>
+
+    <style>
+        .list{
+            /*height: 400px;*/
+            width: 210px;
+            border: 1px solid #000;
+
+            margin: 50px auto 0;
+            list-style: none;
+            padding: 0;
+
+            /*父元素没有高度，子元素设置浮动，撑不开高度*/
+            /*第一种清除浮动的方法*/
+            /*overflow: hidden;*/
+
+
+
+        }
+
+        .list li{
+            width: 50px;
+            height: 50px;
+            background-color: gold;
+            margin: 10px;
+            float: left;
+        }
+
+        /*.clearfix:before{
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after{
+            content: "";
+            display: table;
+            clear: both;
+        }*/
+
+        /*能够同时解决margin-top 和 清除浮动的方法*/
+        /*但是可能 ie 浏览器不认*/
+        .clearfix:before, .clearfix:after{
+            content: "";
+            display: table;
+        }
+        .clearfix:after{
+            clear: both;
+        }
+
+        /*ie浏览器解决清除浮动，解决兼容问题*/
+        .clearfix{
+            zoom: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--ul.list>li{$}*8-->
+    <ul class="list clearfix">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+
+        <!--
+        第二种清除浮动的方法
+        <div style="clear:both"></div>-->
+    </ul>
+</body>
+</html>

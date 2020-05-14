@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS伪类选择器</title>
+
+    <style>
+
+        .link{
+            font-size: 30px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        /*伪类选择器*/
+        .link:hover{
+            color: cornflowerblue;
+            /*font-weight: bold;*/
+            /*font-style: italic;*/
+        }
+
+        /*组选择器*/
+        .box01,.box02{
+            font-size: 20px;
+        }
+        /*伪元素*/
+        .box01:before{
+            content: "·";
+            color: blueviolet;
+        }
+        .box02:after{
+            content: "!";
+            color: blueviolet;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <a class="link" href="http://www.wpfei.cn">王鹏飞的个人博客</a>
+
+    <div class="box01">
+        这是第一个div
+    </div>
+
+    <div class="box02">
+        这是第二个div
+    </div>
+
+</body>
+</html>

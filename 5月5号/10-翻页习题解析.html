@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特征布局:翻页</title>
+
+    <style>
+
+        .box{
+            width: 600px;
+            height: 40px;
+            /*background-color: cyan;*/
+            /*去掉小圆点*/
+            list-style: none;
+            margin: 50px auto 0;
+            padding: 0;
+            border: 1px solid #666;
+
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .box li{
+            height: 26px;
+            display: inline-block;
+            background-color: gold;
+            font: normal 12px/26px "Microsoft YaHei";
+        }
+        .box .omit{
+            background-color: white;
+        }
+
+
+        .box li a{
+            /*background-color: cyan;*/
+            display: block;
+            height: 26px;
+            text-decoration: none;
+            margin: 0 7px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <ul class="box">
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li class="omit"><a href="#">...</a></li>
+        <li><a href="#">17</a></li>
+        <li><a href="#">18</a></li>
+        <li><a href="#">19</a></li>
+        <li><a href="#">20</a></li>
+        <li><a href="#">下一页</a></li>
+    </ul>
+
+</body>
+</html>

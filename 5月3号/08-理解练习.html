@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>理解练习</title>
+
+    <style>
+
+        /*!*id选择器*!*/
+        /*#div2{*/
+        /*    margin: 0;*/
+        /*}*/
+
+
+        /*类选择器*/
+        .con1{
+            width: 200px;
+            height: 200px;
+            background: gold;
+            /*设置边框可以避免margin-top塌陷*/
+            border: 1px solid #000;
+
+            /*第二种方法:设置元素溢出可以避免margin-top塌陷*/
+            /*overflow: hidden;*/
+        }
+
+        /*类选择器*/
+        .box1{
+            width: 120px;
+            height: 50px;
+            background: green;
+            margin: 75px 40px;
+        }
+
+        /*同一个div标签中，最外层的div的样式位置发生变化，内部div也会随之发生移动*/
+        /*类选择器*/
+        .con2{
+            width: 120px;
+            height: 50px;
+            background: gold;
+            padding: 75px 40px;
+            margin: -202px 0 0 260px;
+        }
+        .box2{
+            width: 120px;
+            height: 50px;
+            background: green;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="con1">
+        <div class="box1">
+
+        </div>
+    </div>
+
+    <div class="con2">
+        <div class="box2">
+
+        </div>
+    </div>
+
+</body>
+</html>

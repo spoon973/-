@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>块/内联/内联块元素试题</title>
+
+    <style>
+
+        .menu{
+            width: 694px;
+            height: 50px;
+            /*background: cyan;*/
+            margin: 50px auto;
+            font-size: 0;
+        }
+
+        .menu a{
+            /*设置内联元素为内联块元素*/
+            display: inline-block;
+            width: 98px;
+            height: 48px;
+            background: #ffffff;
+
+
+            /*font-size: 16px;*/
+            font: normal 16px/48px "Microsoft YaHei";
+            border: 1px solid gold;
+            color: blue;
+            margin-left: -1px;
+            text-align: center;
+            text-decoration:none;
+        }
+
+        .menu a:hover{
+            background: gold;
+            color: white;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="menu">
+        <a href="#">首页</a>
+        <a href="#">公司简介</a>
+        <a href="#">解决方案</a>
+        <a href="#">公司新闻</a>
+        <a href="#">行业动态</a>
+        <a href="#">招贤纳士</a>
+        <a href="#">联系我们</a>
+    </div>
+
+</body>
+</html>

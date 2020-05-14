@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单提交</title>
+</head>
+
+<body>
+
+    <h1>注册表单</h1>
+
+    <form action="" method="get">
+
+        <div>
+            <!--label设置输入框前面的信息，input设置输入框-->
+            <!--根据name拿到所需要的值-->
+            <label>用户名:</label>
+            <input type="text" name="username" />
+        </div>
+
+        <br>
+
+        <div>
+            <!--&nbsp;在页面中显示空格-->
+            <label>密&nbsp;&nbsp;&nbsp;&nbsp;码:</label>
+            <input type="password" name="password" />
+        </div>
+
+        <br>
+
+
+        <div>
+            <label>性&nbsp;&nbsp;&nbsp;&nbsp;别:</label>
+            <!--radio圆形选择框，gender设置单选框-->
+            <!--选择框没有输入值，因此需要设置value值，否则传输默认为on-->
+            <input type="radio" name="gender" value="0"> 男
+            <input type="radio" name="gender" value="1"> 女
+        </div>
+
+        <br>
+
+        <div>
+            <label>爱&nbsp;&nbsp;&nbsp;&nbsp;好:</label>
+            <!--checkbox方框选择框-->
+            <!--选择框没有输入值，因此需要设置value值，否则传输默认为on-->
+            <input type="checkbox" name="like" value="music"> 音乐
+            <input type="checkbox" name="like" value="basketball"> 篮球
+            <input type="checkbox" name="like" value="movie"> 电影
+        </div>
+
+        <br>
+
+        <div>
+            <label>照&nbsp;&nbsp;&nbsp;&nbsp;片:</label>
+            <!--上传文件用file-->
+            <input type="file" name="">
+        </div>
+
+        <br>
+
+        <div>
+            <label>个人介绍:</label>
+            <!--多行文本输入框-->
+            <textarea name="introduce"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <label>个人籍贯:</label>
+            <!--select声明下拉表单控件的范围-->
+            <select name="site">
+                <!--和option组合使用，规定下拉框内显示内容-->
+                <option value="北京">北京</option>
+                <option value="上海">上海</option>
+                <option value="河北">河北</option>
+                <option value="广州">广州</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <!--submit是提交按钮-->
+            <!--input内value值的设定表示按钮内部的显示内容-->
+            <!--<input type="submit" name="" value="提交">-->
+            <!--可能提交两次的bug-->
+            <input type="image" src="../images/达内logo.jpg" name="" >
+
+            <!--reset是重置按钮-->
+            <input type="reset" name="" value="重置">
+        </div>
+    </form>
+
+</body>
+</html>

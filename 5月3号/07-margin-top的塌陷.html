@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>amrgin-top的塌陷</title>
+
+    <style>
+        /*第三种方法:外面的盒子使用伪元素类 clearfix是约定俗成的*/
+        .clearfix:before{
+            content: "";
+            display: table;
+        }
+
+        /*类选择器*/
+        .con{
+            width: 300px;
+            height: 300px;
+            background: gold;
+
+            /*第一种方法:外部盒子设置一个边框可以避免margin-top塌陷*/
+            /*border: 1px solid #000;*/
+
+            /*第二种方法:设置元素溢出可以避免margin-top塌陷*/
+            /*overflow: hidden;*/
+        }
+
+        /*类选择器*/
+        .box{
+            width: 200px;
+            height: 100px;
+            background: green;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="con clearfix">
+        <div class="box">
+
+        </div>
+    </div>
+
+</body>
+</html>

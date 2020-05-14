@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习题解析升级版本</title>
+
+    <style>
+
+        body{
+            margin: 0;
+        }
+
+        .box{
+            width: 202px;
+            height: 156px;
+            background: pink;
+
+            margin: 50px auto 0;
+        }
+
+        .box div{
+            width: 200px;
+            height: 30px;
+            border: 1px solid green;
+            background: gold;
+
+            /*因为每一个小的div都可以设置margin属性，设置其margin为负值，可以抵押覆盖叠起来*/
+            margin-top: -1px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习题</title>
+
+    <style>
+        /*标签选择器*/
+        body{
+            margin: 0;
+        }
+
+        /*类选择器*/
+        .box{
+            width: 202px;
+            height: 156px;
+            background: gold;
+
+            margin: 50px auto 0;
+        }
+        /*层级选择器*/
+        .box div{
+            width: 200px;
+            height: 30px;
+
+            border: 1px solid green;
+
+            background: gold;
+
+            border-bottom: 0;
+        }
+        /*层级选择器*/
+        .box .last{
+            border-bottom: 1px solid green;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="last"></div>
+    </div>
+
+</body>
+</html>

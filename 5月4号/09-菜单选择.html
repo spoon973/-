@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单</title>
+
+    <style>
+
+        .menu{
+            width: 694px;
+            height: 50px;
+            /*background-color: cyan;*/
+            /*去掉小圆点*/
+            list-style: none;
+            margin: 50px auto 0;
+            padding: 0;
+        }
+
+        .menu li{
+            width: 98px;
+            border: 1px solid #ff8200;
+            background-color: white;
+            float: left;
+            margin-left: -1px;
+        }
+
+        .menu li a{
+            text-decoration: none;
+            /*background-color: gold;*/
+            /*转成行内块(内联块)*/
+            display: inline-block;
+            width: 98px;
+            text-align: center;
+            font: normal 16px/48px "Microsoft YaHei";
+        }
+
+        .menu li a:hover{
+            color: white;
+            background-color: #ff8200;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!--ul.menu>(li>a{首页})*7-->
+    <ul class="menu">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">解决方案</a></li>
+        <li><a href="#">公司新闻</a></li>
+        <li><a href="#">行业动态</a></li>
+        <li><a href="#">招贤纳才</a></li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+
+</body>
+</html>
