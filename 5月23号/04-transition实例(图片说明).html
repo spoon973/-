@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition实例(图片说明)</title>
+    <style>
+
+        .pic_con{
+            width: 200px;
+            height: 300px;
+            margin: 50px auto 0;
+            /*绝对定位*/
+            position: relative;
+            overflow: hidden;
+        }
+        .pic_info{
+            /*相对定位*/
+            position: absolute;
+            left: 0;
+            top: 300px;
+            width: 180px;
+            height: 100px;
+            background-color: rgba(0,0,0,0.3);
+            color: white;
+            padding: 10px;
+            transition: all 666ms ease;
+        }
+
+        .pic_con:hover .pic_info{
+            top: 180px;
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="pic_con">
+        <img src="../images/banner01.jpg" alt="banner">
+        <div class="pic_info">
+            <h3>文字说明标题</h3>
+            <p>文字说明，对这个图片的解释</p>
+        </div>
+    </div>
+</body>
+</html>

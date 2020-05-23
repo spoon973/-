@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3透明</title>
+
+    <style>
+        /*id选择器*/
+        body{
+            background: url("../images/banner01.jpg");
+        }
+        /*类选择器*/
+        .box{
+            width: 300px;
+            height: 100px;
+            background-color: #000;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+
+            /*元素透明的完整写法*/
+            /*设置透明度*/
+            opacity: 0.3;
+            /*兼容IE*/
+            filter: alpha(opacity=30);
+        }
+        .box2{
+            width: 300px;
+            height: 100px;
+            /*background-color: #000;*/
+            background-color: rgba(0,0,0,0.3);
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+            margin-top: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box">这是一个div</div>
+    <div class="box2">这是第二个div</div>
+
+</body>
+</html>

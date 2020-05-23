@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3圆角</title>
+
+    <style>
+        /*组选择器*/
+        .box1,.box2,.box3{
+            width:300px;
+            height: 300px;
+            border: 3px solid #000;
+            background-color: gold;
+            margin: 50px auto 0;
+        }
+        /*类选择器*/
+        .box1{
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+        }
+        .box2{
+            /*border-radius: 150px;*/
+            border-radius: 50%;
+        }
+        .box3{
+            border-bottom-left-radius: 150px;
+            border-top-right-radius: 150px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+</body>
+</html>
