@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="61ad9b62-ab81-4eda-8267-1ce660100b43" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="61ad9b62-ab81-4eda-8267-1ce660100b43" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +61,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/5月23号/06-transform-origin.html">
+=======
+        <entry file="file://$PROJECT_DIR$/5月13号/web/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2732">
+              <caret line="402" lean-forward="true" selection-start-line="402" selection-end-line="402" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/5月13号/web/index.html">
+>>>>>>> Stashed changes
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
               <caret line="26" column="43" selection-end-line="47" selection-end-column="7" />
@@ -145,11 +162,19 @@
       </list>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -162,8 +187,13 @@
         <subPane>
           <expand>
             <path>
+<<<<<<< Updated upstream
               <item name="Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="前端" type="b2602c69:ProjectViewProjectNode" />
+              <item name="前端" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
             </path>
           </expand>
           <select />
@@ -231,14 +261,22 @@
       <workItem from="1588816512797" duration="1032000" />
       <workItem from="1589107074753" duration="1002000" />
       <workItem from="1589352188180" duration="5142000" />
+<<<<<<< Updated upstream
       <workItem from="1589689793164" duration="14571000" />
       <workItem from="1589775608267" duration="1229000" />
       <workItem from="1590214953636" duration="7851000" />
+=======
+      <workItem from="1589689793164" duration="15235000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="92657000" />
+=======
+    <option name="totallyTimeSpent" value="84241000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
@@ -506,6 +544,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5月13号/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="77">
           <caret line="335" column="23" lean-forward="true" selection-start-line="335" selection-start-column="23" selection-end-line="335" selection-end-column="23" />
         </state>
@@ -594,6 +633,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="26" column="43" selection-end-line="47" selection-end-column="7" />
+=======
+        <state relative-caret-position="2732">
+          <caret line="402" lean-forward="true" selection-start-line="402" selection-end-line="402" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
