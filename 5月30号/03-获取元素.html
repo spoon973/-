@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取元素</title>
+	<script type="text/javascript">
+		// window.onload 函数内的语句，会在页面加载完成后才执行
+		window.onload = function() {、
+			// 使用内置对象document.getElementById()方法来获取页面上设置的id值
+			var oDiv = document.getElementById('div1');
+			var oInput =  document.getElementById('btn');
+			oInput.onclick = fnGetelement;
+			function fnGetelement() {
+				// 改变元素的属性
+				oDiv.style.color = "red";
+				oDiv.style.fontSize = "30px";
+			}
+		}
+
+	</script>
+
+</head>
+<body>
+	<div class="box" id="div1">这是一个div元素</div>
+	<input type="button" name="" value="设置" id="btn">
+</body>
+</html>

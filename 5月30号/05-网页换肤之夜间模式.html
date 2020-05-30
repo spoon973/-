@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网页换肤</title>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			var oInput = document.getElementById('btn');
+			var oBody = document.getElementById('mybody');
+
+			oInput.onclick = function fnChange() {
+				if (oInput.value === "夜间模式"){
+					oBody.style.backgroundColor = "#666";
+					oInput.value = "正常模式";
+				}else{
+					oBody.style.backgroundColor = "#fff";
+					oInput.value = "夜间模式";
+				};
+			};
+		};
+	</script>
+
+	<style type="text/css">
+		.cls_btn{
+			display: block;
+			width: 100px;
+			height: 100px;
+			border: 0;
+			border-radius: 50%;
+			font-size: 20px;
+			margin: 250px auto 0;
+		}
+
+	</style>
+
+</head>
+<body id='mybody'>
+
+	<input type="button" name="" class="cls_btn" id="btn" value="夜间模式">
+	
+</body>
+</html>
