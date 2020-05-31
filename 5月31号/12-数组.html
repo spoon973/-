@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组</title>
+	<script type="text/javascript">
+		// 通过类实例化来创建数组
+		var aList01 = new Array('1', 2, 2.56);
+		// 通过直接量的方式创建数组
+		var aList02 = [1, 2, 3,'0'];
+
+		// 通过length来获取数组成员的个数
+		// alert(aList02.length);
+
+		// 用下标操作数组的某个数据
+		// alert(aList02[0]);
+
+		// 使用push方法向数组中增添数据
+		// aList02.push('a', 'b', 'c');
+		// alert(aList02);
+
+		// 使用pop方法删除某一个元素，一次只能删除一个元素
+		// aList02.pop('c');
+		// alert(aList02);
+		
+		// unshift()和 shift() 从数组前面增加成员或删除成员
+		// aList02.unshift('a');
+
+		// shift 不需要参数，默认只删除数组的第一个元素
+		// aList02.shift();
+		// alert(aList02);
+		
+		// 将数组反转
+		// aList02.reverse();
+		// alert(aList02);
+		
+		// 返回数组中元素第一次出现的索引值
+		var aList03 = ['a', 'b', 'c', 'd', 'a', 'b'];
+		// alert(aList03.indexOf('b'));
+
+		/*
+		参数:
+			第一个参数:从那个索引位置开始删除
+			第二个参数:删除几个索引位置的元素
+			第三及以后的参数：要增添的元素
+		*/
+		// aList03.splice(2, 1, '0' ,'0', '0');
+		// alert(aList03);
+
+		// 执行join不会对原数组发生变化，所以需要使用alert(aList03.join('-'));
+		// 数组执行方法后，存在返回值，需要alert弹出返回值 
+		alert(aList03.join('-'));
+
+
+	</script>
+
+</head>
+<body>
+	
+</body>
+</html>
