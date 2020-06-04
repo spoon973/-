@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>window.location属性02</title>
+	<script type="text/javascript">
+		window.onload = function() {
+			var oBody = document.getElementById('body01');
+			//获取地址参数部分
+			var sDate = window.location.search;
+			//获取页面锚点或者叫哈希值
+			var sHase = window.location.hash;
+			alert(sHase);
+			if (sDate != ''){
+				var aRr = sDate.split('=');
+				var iNum = aRr[1];
+				switch (iNum){
+					case '1':
+						oBody.style.backgroundColor = 'gold';
+						break;
+					case '2':
+						oBody.style.backgroundColor = 'green';
+						break;
+					default:
+						oBody.style.backgroundColor = "pink";
+				};
+			};
+		};
+	</script>
+
+
+</head>
+<body id="body01">
+	这是04页面
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>封闭函数</title>
+	<script type="text/javascript" src="#"></script>
+
+	<script type="text/javascript">
+		/*
+		function myalert() {
+			alert("hello world");
+		};
+		myalert();
+		*/
+		// 转换成封闭函数的写法
+		(function () {
+			alert("hello world");
+		});  // 暂时不调用
+
+		// 封闭函数的第二种方法
+		!function() {
+			alert('王鹏飞');
+		}();
+
+		// 封闭函数的第三种方法
+		~function() {
+			alert("飞飞");
+		}();
+
+
+
+		var iNum01 = 12;
+		// 在封闭函数前加一个 ';' 可以避免js压缩的时候出错
+		;(function myalert02() {
+			alert('hahaha');
+		})();
+
+		(function (){
+			var iNum01 = 24;
+			function myalert02() {
+				alert("hello hello");
+			};
+			myalert02();
+		})();
+		
+		alert(iNum01);
+		myalert02();
+
+	</script>
+
+</head>
+<body>
+	
+</body>
+</html>

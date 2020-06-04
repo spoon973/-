@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>math对象</title>
+	<script type="text/javascript">
+		var iPi = Math.PI;
+		
+		var arr = [];
+		for (var i=0; i<20; i++){
+			// Math.random 只能返回从0到1之间的随机数,不包括1
+			var iNum = Math.random();
+			arr.push(iNum);
+		}
+		// alert(arr);
+		console.log(arr);
+		// Math.floor是向下取整
+		alert(Math.floor(5.6)); // 弹出 5
+		// Math.ceil 是向上取整，去掉小数部分，整体 +1
+		alert(Math.ceil(5.2))  // 弹出 6
+
+		// 创建一个生成 10 到 20 之间的随机数
+		var iN01 = 10;
+		var iN02 = 20;
+		var arr2 = [];
+		for (var i=0; i<30; i++){
+			// 生成 10 到 20 的随机数
+			var  iRandom = Math.floor((iN02 - iN01 + 1) * Math.random()) + iN01;
+			arr2.push(iRandom);
+		};
+		// alert(arr2);
+		console.log(arr2);
+
+	</script>
+	
+</head>
+<body>
+	
+</body>
+</html>
