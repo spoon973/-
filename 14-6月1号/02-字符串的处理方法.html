@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>字符串的处理方法</title>
+	<script type="text/javascript">
+		var iNum01 = 12;
+		var iNum02 = '24';
+		var sTr = 'abc';
+
+		// 数字和字符串相加,等同于字符串拼接
+		// alert(iNum01 + iNum02);  // 弹出 1224
+
+		// alert(sTr + iNum02);  // 弹出abc24
+
+		var sTr02 = '12.356';
+
+		// 将字符串的小数转换为整数
+		// alert(parseInt(sTr02));
+		// 字符串的小数转换为浮点数
+		// alert(parseFloat(sTr02));
+
+		var sTr03 = "2020-6-1";
+		var aRr = sTr03.split('-').join('/');
+
+		// alert(aRr);
+		
+		var sTr04 = "#Div";
+		// alert(sTr04.charAt(1));
+		
+		var sTr05 = 'abcdef microsoft dafdsae';
+		// 如果这个字符存在，返回此字符串对应的索引值
+		// 如果这个字符不存在，返回 -1
+		// 相对的可以得出：如果值大于等于 0 ，证明此元素存在
+		var iNum03 = sTr05.indexOf('microsoft');
+		// alert(iNum03);
+		// 
+		sTr07 = 'abcdef123456edfg';
+		// 切片
+		// alert(sTr07.substring(6,12));
+		
+		// 转大写
+		// alert(sTr07.toUpperCase());
+		// 转小写
+		// alert(sTr07.toLowerCase());
+		
+		// 反转
+		alert(sTr07.split('').reverse().join(''));
+	</script>
+
+
+</head>
+<body>
+	
+</body>
+</html>

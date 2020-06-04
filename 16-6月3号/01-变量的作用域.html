@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>变量作用域</title>
+
+	<script type="text/javascript">
+		// 函数外部定义的全局变量，函数内部和外部都可以访问
+		// 慎用全局变量
+		var iNum01 = 12;
+		// 重复定义，会覆盖上面的iNum01
+		// var iNum01 = 14;
+
+		function myalert() {
+			// 函数内部定义的局部变量，函数内部可以访问，外部不能访问
+			var iNum02 = 24;
+			alert(iNum01);
+
+			iNum01 += 10;
+		};
+
+		myalert();
+
+		function myalert02() {
+			alert(iNum02);
+		}
+
+		myalert(iNum01);  // 弹出 12
+		myalert02(iNum01);  // 弹出22
+
+	</script>
+
+
+</head>
+<body>
+	
+</body>
+</html>

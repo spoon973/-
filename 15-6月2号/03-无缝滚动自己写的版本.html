@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>无缝滚动</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		.list_con{
+			width: 1000px;
+			height: 200px;
+			border: 1px solid #000;
+			margin: 10px auto 0;
+			background-color: #f0f0f0;
+			/*相对定位*/
+			position: relative;
+			overflow: hidden;
+		}
+
+		.list_con ul{
+			list-style: none;
+			width: 2000px;
+			height: 200px;
+			/*绝对定位*/
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: pink;
+		}
+
+		.list_con li{
+			width: 180px;
+			height: 30px;
+			float: left;
+			margin: 10px;
+		}
+		
+		.btns_con{
+			width: 1000px;
+			height: 30px;
+			margin: 50px auto 0;
+			/*相对定位*/
+			position: relative;
+		}
+
+		.left,.right{
+			width: 30px;
+			height: 30px;
+			background-color: gold;
+			/*绝对定位*/
+			position: absolute; 
+			left: -40px;
+			top: 124px;
+			font-size: 30px;
+			line-height: 30px;
+			color: #000;
+			font-family: "Arial";
+			text-align: center;
+			/*鼠标移动到该元素，形状变换为手形*/
+			cursor: pointer;
+			border-radius: 15px;
+			/*透明度*/
+			opacity: 0.5;
+		}
+		
+		.right{
+			left: 1010px;
+			top: 124px;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			var oDiv = document.getElementById('slide');
+			var oBtn01 = document.getElementById('btn01');
+			var oBtn02 = document.getElementById('btn02');
+			/*使用gerElemtByTagName获取标签元素，虽然只有一个元素，但仍然是数据集，因此需要索引获取*/
+			var oUl = oDiv.getElementsByTagName('ul')[0];
+			oUl.innerHTML += oUl.innerHTML;
+
+			var iLeft = 0;
+			// var iSpeed = -2;
+			var iNowspeed = 0;
+
+			oBtn01.onclick = function() {
+				iSpeed = -2;
+			}
+			oBtn02.onclick = function() {
+				iSpeed = 2;
+			}
+
+			// 设置鼠标移入时静止状态
+			oDiv.onmouseover = function() {
+				// 先获取鼠标移入前iSpeed的状态值
+				iNowspeed = iSpeed;
+				iSpeed = 0;
+
+			}
+
+			// 设置鼠标移出时的继续状态
+			oDiv.onmouseout = function() {
+				iSpeed = iNowspeed;
+			};
+
+
+			// 创建定时器，使用匿名函数
+			var timer = setInterval(function(){
+					iLeft += iSpeed;
+					if (iLeft > 0){
+						iLeft = -1000;
+					}else if(iLeft < -1000){
+						iLeft = 0;
+					};
+					oUl.style.left = iLeft + 'px';
+
+			},15);
+		}
+
+	</script>
+
+</head>
+<body>
+	<div class="btns_con">
+		<div class="left" id="btn01">&lt;</div>
+		<div class="right" id="btn02">&gt;</div>
+	</div>
+	<div class="list_con" id="slide">
+		<ul>
+			<li>
+				<a href="http://www.baidu.com" title="百度">
+					<img src="images/goods001.jpg" alt="商品图片">
+				</a>
+			</li>
+			<li>
+				<a href="http://www.wpfei.cn" title="王鹏飞个人博客">
+					<img src="images/goods002.jpg" alt="商品图片">
+				</a>
+			</li>
+			<li>
+				<a href="http://www.baidu.com" title="百度">
+					<img src="images/goods003.jpg" alt="商品图片">
+				</a>
+			</li>
+			<li>
+				<a href="http://www.wpfei.cn" title="王鹏飞个人博客">
+					<img src="images/goods004.jpg" alt="商品图片">
+				</a>
+			</li>
+			<li>
+				<a href="http://www.baidu.com" title="百度">
+					<img src="images/goods005.jpg" alt="商品图片">
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+
+</body>
+</html>
