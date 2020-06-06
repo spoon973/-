@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器过滤</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 标签选择器
+			/*var $div = $('div');
+			$div.css({'backgroundColor':'gold'});*/
+			$('div').css({'backgroundColor':'gold'});
+			$('div').has('p').css({'backgroundColor':'red','fontSize':'30px'});
+			//选择第 几个 div元素
+			$('div').eq(4).css({'textIndent':'20px'});
+
+			$('div').eq(4).prev().css({'color':'red'});
+
+			$('div').find('.tip').css({'fontSize':'30px'});
+
+		});
+
+	</script>
+
+</head>
+<body>
+	<div>1</div>
+	<div><p>2</p></div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div><span>8</span><span class='tip'>9</span></div>
+</body>
+</html>

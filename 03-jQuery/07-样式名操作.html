@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>样式名操作</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var $div = $('.box');
+			// 这里需要把名称放进去，不需要css格式
+			// 在原来的样式基础之上，加上big的样式
+			$div.addClass('big');
+
+			// 在原来的样式基础之上，减去red的样式
+			$div.removeClass('red');
+		});
+
+	</script>
+
+	<style type="text/css">
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: gold;
+		}
+		.big{
+			font-size: 30px;
+		}
+		.red{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box red">div元素</div>
+</body>
+</html>

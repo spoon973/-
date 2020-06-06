@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery引入容易出错的写法</title>
+	<!-- 不能直接在jquery的引用标签里面写js代码 -->
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<!-- 需要另外写一个script标签,在这个标签里面写js代码 -->
+	<script type="text/javascript">
+		
+		$(function(){
+
+		});
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
