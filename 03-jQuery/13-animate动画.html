@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animate动画</title>
+	<script type="text/javascript" src="templates/js/jquery-1.12.4.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#btn').click(function(){
+				$('.box').animate({'width':'600px'},1000,'swing',function(){
+					$('.box').animate({'height':'400px'},1000,function(){
+						$('.box').animate({'opacity':'0'})
+					});
+				});
+			});
+
+			$('#btn2').click(function(){
+				$('.box2').stop().animate({
+					'width': '+=100px'
+				},1000,'swing',function(){
+					$('.box2').animate({"height":'400px'},1000,'swing');
+				});
+			});
+		});	
+	</script>
+	
+	<style type="text/css">
+		.box, .box2{
+			width: 100px;
+			height: 100px;
+			background-color: gold
+		}
+	</style>
+
+</head>
+<body>
+	<input type="button" name="" value="动画" id="btn">
+	<div class="box"></div>
+	<br>
+	<br>
+	<input type="button" name="" value="动画" id="btn2">
+	<div class="box2"></div>
+</body>
+</html>

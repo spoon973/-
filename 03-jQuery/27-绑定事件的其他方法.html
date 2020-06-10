@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bind绑定时间的其他方法</title>
+	<script type="text/javascript" src="templates/js/jquery-1.12.4.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			/*$('#btn').click(function(){
+				alert('click事件')
+			});*/
+
+			// 点击或者鼠标移入的时候，都执行绑定的匿名函数
+			$('#btn').bind('click mouseover',function(){
+				
+				alert('触发事件绑定的函数')
+				// alert($(this).html());
+				
+				$(this).unbind('mouseover');
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<input type="button" name="" value="按钮" id="btn">
+</body>
+</html>

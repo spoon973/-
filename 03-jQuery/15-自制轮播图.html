@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自制轮播图</title>
+	<script type="text/javascript" src='templates/js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+		$(function(){
+			var $btn = $('.btns input');
+			var $slides = $('.con .slides');
+			var $time = 0;
+
+			$btn.click(function(){
+				$(this).addClass('current').siblings().removeClass('current');
+
+				$slides.stop().animate({'left':-700 * $(this).index()});
+			});
+			/*
+			$('body').everyTime('1s',function(){
+				$slides.animate({'left':-700 * $time});
+				$time++;
+			});
+			 */
+			
+		});
+	</script>
+
+	<style type="text/css" src='templates/css/reset.css'></style>
+	<style type="text/css">
+		.con{
+			width: 700px;
+			height: 400px;
+			margin: 25px auto 0; 
+			overflow: hidden;
+			position: relative;
+		}
+		.con .slides{
+			width: 2200px;
+			height: 400px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.con .slides ul{
+			padding: 0;
+			list-style: none;
+			float: left;
+		}
+		.con .slides img{
+			width: 700px;
+			height: 400px; 
+		}
+		.con .slides li{
+			list-style: none;
+			display: inline;
+			float: left;
+		}
+		.btns{
+			/*display: inline;*/
+			position: relative;
+			left: 315px;
+			top: 350px;
+		}
+		.btns input{
+			width: 15px;
+			height: 15px;
+			margin-left: 15px;
+			border: 0;
+			border-radius: 50%;
+		}
+		.btns .current{
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div class="con">
+		<div class="slides">
+			<ul>
+				<li><img src="templates/images01/banner01.jpg" alt=""></li>
+				<li><img src="templates/images01/banner02.jpg" alt=""></li>
+				<li><img src="templates/images01/banner03.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div class="btns">
+			<input type="button" name="" class="current">
+			<input type="button" name="">
+			<input type="button" name="">
+		</div>
+	</div>
+	
+</body>
+</html>

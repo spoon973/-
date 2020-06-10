@@ -65,7 +65,7 @@
 
 	</style>
 	
-	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="templates/js/jquery-1.12.4.min.js"></script>
 
 	<script type="text/javascript">
 		
@@ -83,8 +83,8 @@
 				// parent 选择某个元素的父级元素
 				// siblings 选择某个元素的同级元素
 				// children 选择某个元素的所有子元素
-				// slideUp 选择的元素向上卷起
-				$(this).next().stop().slideToggle().parent().siblings().children('ul').slideUp();
+				// slideUp 选择的元素向上卷起	
+				$(this).next().styleop().slideToggle().parent().siblings().children('ul').slideUp();
 			});
 
 		});
