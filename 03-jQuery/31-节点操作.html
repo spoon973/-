@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>节点操作</title>
+	<script type="text/javascript" src="templates/js/jquery-1.12.4.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// 通过html的字符串的方式添加节点，性能最高
+			// $('#div1').html($('#div1').html() + '<a herf="#">链接</a>');
+			
+			// 新建一个带有属性的a元素，把它赋值给$a
+			$a = $('<a href="http://www.wpfei.cn">链接</a>');
+			
+			// 新建一个空的a元素			
+			$a2 = $('<a>');
+
+			$p = $('<p>这是一个p元素</p>')
+
+			// 父元素内的后面放入子元素
+			// $('#div1').append($a);
+
+			// 子元素放入到父元素内
+			$a.appendTo('#div1');
+
+			$('#div1').append($a2);
+
+			// 父元素内的后面放入子元素
+			// $('#div1').prepend($p);
+			
+			// 子元素放入到父元素内
+			$p.prependTo($('#div1'));
+
+
+
+		});
+
+	</script>
+
+</head>
+<body>
+	<div id="div1">
+		<h1>这是一个h1元素</h1>
+	</div>
+</body>
+</html>

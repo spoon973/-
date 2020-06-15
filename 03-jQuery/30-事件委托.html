@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件委托</title>
+	<script type="text/javascript" src="templates/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+
+		// $(document).ready(function(){
+			/*$('.list li').bind('click',function(){
+				$(this).css({'backgroundColor':'red'});
+			});
+
+			// 新建一个li元素赋值给$li变量
+			var $li = $('<li>9</li>')
+			// 让新加入的li有相同的事件，需要单独绑定
+			$li.click(....)
+
+			// 把新建的li元素放到ul子集的最后面
+			$('.list').append($li);*/
+
+
+			// 事件委托
+			$(function(){
+				$('.list').delegate('li','click',function(){
+					// $(this) 指的是委托的子元素
+					$(this).css({'backgroundColor':'pink'});
+				});
+				
+			var $li = $('<li>9</li>')
+			$('.list').append($li);
+		});
+		
+		
+
+	</script>
+
+	<style type="text/css">
+		.list{
+			background-color: gold;
+			list-style: none;
+			padding: 10px;
+		}
+		.list li{
+			height: 30px;
+			background-color: green;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+	</ul>
+</body>
+</html>

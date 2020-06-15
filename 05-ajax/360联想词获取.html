@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>360联想词获取</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+    		$('#txt01').keyup(function(){
+        	var sVal = $(this).val();
+	        $.ajax({
+	            url:'https://sug.so.360.cn/suggest?',
+	            type:'get',
+	            dataType:'jsonp',
+	            data: {word: sVal}
+	        })
+	        .done(function(data){
+	            var aData = data.s;
+	            $('.list').empty();
+	            for(var i=0;i<aData.length;i++)
+	            {
+	                var $li = $('<li>'+ aData[i] +'</li>');
+	                $li.appendTo($('.list'));
+	            }
+	        })        
+	    })
+	})
+
+	</script>
+</head>
+<body>
+	<!-- https://sug.so.360.cn/suggest?callback=suggest_so&encodein=utf-8&encodeout=utf-8&format=json&src=so_home&fields=word&word=d&mid=f2f6af553edbcf3dd7468d56c06bb8a2&huid=11KxnP9PArBkkYp1VJwQepy1EXCtY%2FJpjMNpLdtComoG0%3D&llbq=A5%2CB5%2CC5%2CD5 -->
+	<input type="text" name="" id="txt01">
+	<ul class="list"></ul>
+
+</body>
+</html>

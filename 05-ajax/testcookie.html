@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试cookie</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$mycookie = $.cookie('mycookie');
+			alert($mycookie);
+		})
+		// 设置cookie
+		// 参数：cookie名称  cookie内容  cookie 时间和路径
+		// $.cookie('mycookie', 'ok', {expires:7,path:'/'});
+		
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
